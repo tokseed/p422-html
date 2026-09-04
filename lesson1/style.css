@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * - говорит о том что мы обращаемся ко всем обьектам  */
+
+.container{
+    background-color: brown;
+    margin: 50px auto; 
+    width: 80%;
+    padding: 30px;
+}
+
+.container hr {
+    margin: 20px 0;
+    
+}
+
+.container p{ 
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.container h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .small-text {
+   font-style: 13px; 
+
+}
+
+.container sup{
+    color: blue;
+    font-weight: bold;
+}
+
+.container .italic-txt {
+    font-style: italic;
+    text-transform: uppercase;
+
+}
+
+.container span { 
+    font-style: normal; 
+    font-weight:  bold;
+    color: blueviolet;
+
+    text-decoration: underline;
+}

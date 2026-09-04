@@ -1,0 +1,52 @@
+.container-one {
+    background-color:#f4f4f4; 
+    width: 1000px;
+    margin: 50px auto;
+    padding: 50px 30px;
+}
+
+
+
+.container-one .head-one{
+    text-align: center;
+    font-family: sans-serif;
+    color: rgb(54, 9, 95);
+}
+
+.container-one .head-two{
+    text-align: left;
+    color: rgb(73, 120, 170);
+    font-family: sans-serif;
+}
+
+.container-one .head-three{
+        color: rgb(73, 120, 170);
+    font-family: sans-serif;
+}
+
+.container-one p{
+    white-space: pre-line;
+    margin-left: 0;
+    padding: 0;
+}
+
+.container-one .head-four{
+    color: rgb(73, 120, 170);
+    font-family: sans-serif;
+}
+
+.container-one .small-text{
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: small;
+}
+
+.container-one .head-five{
+    color: rgb(73, 120, 170);
+    font-family: sans-serif;
+}
+
+.container-one .head-six {
+    color: rgb(73, 120, 170);
+    font-family: sans-serif; 
+}
