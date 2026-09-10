@@ -1,0 +1,144 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container-loading {
+    width: 900px;
+    margin: 50px auto; 
+    padding: 30px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+    display: flex;  
+    gap: 20px;
+}
+
+.container-loading .img-box {
+    width: 30%;
+
+}
+
+.container-loading .img-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-loading .upload-box {
+    width: 55%;
+}
+
+.container-loading .upload-bar {
+    display: flex; 
+    border: 1px solid rgba(0,0,0,0.4);
+
+}
+
+.container-loading .uploading{
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: brown;
+    width: 40%;
+}
+
+.container-loading .about {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.container-loading .upload-box {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.container-loading .upload-box h3{
+    margin-bottom: 10px;
+
+}
+
+.container-loading .btn {
+    /* background-color: yellow; */
+    width: 15%;
+}
+
+.container-loading .btn button {
+    width: 100%;
+    border: none;
+    background-color: chartreuse;
+    text-transform: uppercase;
+    color: crimson;
+    padding: 12px 20px;
+    box-shadow: 2 2 5 rgba(0,0,0,0.4)
+
+}
+
+@media screen and (max-width: 900px) {
+    .container-loading {
+    width: 70vw;
+    /* margin: 50px auto;  */
+    padding: 15px;
+    /* box-shadow: 0 0 10px 3px rgba(0,0,0,0.4); */
+    /* display: flex;   */
+    /* gap: 20px; */
+    flex-direction: column;
+}
+
+.container-loading .img-box, .container-loading .upload-box,  .container-loading .btn {
+    width: 100%;
+    }
+}
+
+/*2*/
+
+.container-lists {
+    width: 500px;
+    margin: 50px auto; 
+    padding: 30px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,0.4);
+
+    h3{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+    }
+}
+
+.container-lists span{
+    color: red;
+    font-weight: 800;
+}
+
+.container-lists .not-complete {
+    background-color: yellowgreen;
+}
+
+.container-lists .ul-header {
+    background-color: #595656;
+}
+
+.container-lists p{
+    padding: 10px 20px;
+}
+
+.container-lists .not-complete p::before{
+    content: "☐" ;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+
+}
+
+.container-lists .delete-txt p::before{
+    content: "☑" ;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10px;
+
+}

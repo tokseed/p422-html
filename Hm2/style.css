@@ -1,0 +1,36 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.container-txt-one {
+    margin: 0 auto;   /* центрирует блок на странице */
+    /* box-shadow: 0 0 10px 3px rgba(0,0,0,0.4); */
+}
+
+.container-txt-one h2 {
+    font-family: cursive;
+    text-align: center;
+}
+
+.container-txt-one p{
+    font-family: cursive;
+    padding: 0 20px;
+}
+
+.container-txt-one .head-one{
+    text-align: center;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+
+.container-txt-one .head-two {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.opacity-40 { color: rgba(0, 0, 0, 0.6); }
+.opacity-50 { color: rgba(0, 0, 0, 0.5); }
+.opacity-70 { color: rgba(0, 0, 0, 0.3); }
