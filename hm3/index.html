@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container"> 
+        <h2>CATS GALLERY</h2>
+
+    <div class="container-main-image">
+        <img id="main-cat" src="cat_tied_256.png" alt="cat empty">
+    </div>
+
+    <div class="container-small-cat">
+
+        <a href="cat_box_256.png" onclick="changeImage(this.href); return false; "  >
+            <div class="cat"><img src="cat_box_64.png" alt="this cat...">
+        </div></a>
+        
+        <a href="cat_cage_256.png" onclick="changeImage(this.href); return false;">
+            <div class="cat"><img src="cat_cage_64.png" alt="this cat...">
+        </div></a>
+    
+        <a href="cat_clean_256.png" onclick="changeImage(this.href); return false;">
+            <div class="cat"><img src="cat_clean_64.png" alt="this cat...">
+        </div></a>
+
+        <a href="cat_eyes_256.png" onclick="changeImage(this.href); return false;">
+            <div class="cat"><img src="cat_eyes_64.png" alt="this cat...">
+        </div></a>
+
+        <a href="cat_purr_256.png" onclick="changeImage(this.href); return false;">
+            <div class="cat"><img src="cat_purr_64.png" alt="this cat...">
+            </div></a>
+
+        <a href="cat_tied_256.png" onclick="changeImage(this.href); return false;">
+            <div class="cat"><img src="cat_tied_64.png" alt="this cat...">
+            </div></a>
+    
+    
+
+        </div>
+    </div>
+
+    <script>
+        function changeImage(src){
+            document.getElementById("main-cat").src = src
+        }
+    </script>
+</body>
+</html>

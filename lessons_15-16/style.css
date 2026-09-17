@@ -1,0 +1,117 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.loader-container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    margin: auto;
+
+    position: relative;
+    top: 50%;
+
+    animation: loader 1s ease infinite;
+}
+
+
+@keyframes loader{
+    0%, 100% {
+        box-shadow: -10px 15px 0 #fff, 10px 15px 0 #ffffff33, 10px
+        36px 0 #ffffff33, -10px 36px 0 #ffffff33;        
+    }
+
+    25%{
+        box-shadow: 10px 15px 0 #ffffff33, -10px 15px 0 #fff, -10px
+        36px 0 #ffffff33, 10px 36px 0 #ffffff33;  
+    }
+
+    50%{
+        box-shadow: -10px 15px 0 #ffffff33, 10 15px 0 #ffffff33, 10px 36px 0 #fff, -10 36px 0 #ffffff33;
+    }
+
+    75%{
+        box-shadow: -10px 15px 0 #ffffff33, 10px 15px 0 #ffffff33, 10px 36px 0 #ffffff33, -10 36px 0 #fff;
+    }
+}
+
+/* 2 задание */
+.cont-box{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    margin: 2rem auto;
+    position: relative;
+    border: 1px solid #363535;
+    border-radius: 10px;
+    perspective: 800px;
+}
+
+.product, .description{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    background: #000000;
+    transition: 1s;
+    /* perspective: 800px; */
+    color: rgb(172, 21, 21);
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: Snell Roundhand, cursive;
+
+    transform: rotateY(180deg);
+}
+
+.description a{
+    padding: 10px 30px;
+    margin-top: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    background: rgb(210, 14, 14);
+    border-radius: 5px;
+    font-weight: bold;
+
+}
+
+.card:hover .product {
+    transform: rotateY(180deg);
+}
+
+.card:hover .description {
+    transform: rotateY(360deg);
+}
