@@ -115,3 +115,133 @@
 .card:hover .description {
     transform: rotateY(360deg);
 }
+
+/* 3 */
+
+.container-door{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(126, 43, 57);
+}
+
+.container-door .cont{
+    position: relative;
+    width: 700px;
+    height: 180px;
+    background-color: rgb(236, 192, 192);
+    perspective: 1200px;
+}
+
+.container-door .door{
+    position:absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: red ;
+    border-top: 6px solid black;
+    border-bottom: 6px solid black;
+    transform-style: preserve-3d;
+    transition: transform 0.8s linear;
+
+}
+
+.container-door .left-door{
+    left: 0;
+    transform-origin: left center;
+    border-right: 6px solid black;
+}
+
+.container-door .right-door{
+    right: 0;
+    transform-origin: right center;
+    border-left: 6px solid black;
+}
+
+.container-door .cont:hover .left-door{
+    transform: translateX(-18%) rotateY(45deg);
+}
+.container-door .cont:hover .right-door{
+    transform: translate(18%) rotateY(-45deg);
+}
+
+/* 4 */
+
+/* 4 */
+
+.container-clock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.container .center{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+}
+
+.container-clock .hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    width: 4px;
+    background-color: rgb(56, 13, 13);
+    border-radius: 2px;
+    transform-origin: bottom center;
+}
+
+.container-clock .minute-hand {
+    height: 90px;
+    transform: translateX(-50%) rotate(10deg);
+}
+
+.container-clock .hour-hand {
+    height: 60px;
+    transform: translateX(-50%) rotate(35deg);
+    /* Добавили имя анимации rotate-minutes */
+    animation: rotate-minutes 60s linear infinite;
+}
+
+.container-clock .second-hand {
+    height: 110px;
+    background-color: #000000;
+    transform: translateX(-50%) rotate(50deg);
+    /* Добавили имя анимации rotate-second */
+    animation: rotate-second 30s linear infinite;
+} 
+
+@keyframes rotate-minutes {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
+
+@keyframes rotate-second {
+    from {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateX(-50%) rotate(360deg);
+    }
+}
