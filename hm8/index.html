@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit card details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="card-form">
+        <h1>CREDIT CARD DETAILS</h1>
+
+        <div class="card-content">
+            <label for="card-number">Card Number</label>
+            <input id="card-number" type="text" inputmode="numeric" placeholder="1234 5678 9012 3456">
+
+            <label for="card-name">Name On Card</label>
+            <input id="card-name" type="text" placeholder="Name Surname">
+
+            <div class="small-fields">
+                <div>
+                    <label for="expiry-month">Expiry Date</label>
+                    <div class="expiry-fields">
+                        <input id="expiry-month" type="text" inputmode="numeric" placeholder="02">
+                        <input id="expiry-year" type="text" inputmode="numeric" placeholder="2017">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="cvv">CVV / CVN</label>
+                    <input id="cvv" type="password" inputmode="numeric" placeholder="***">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

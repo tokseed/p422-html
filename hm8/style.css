@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 80px 20px;
+    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+}
+
+.card-form {
+    width: 585px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(119, 190, 191, 0.7);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.18);
+}
+
+.card-form h1 {
+    width: 100%;
+    padding: 14px 50px;
+    background-color: #e65f1c;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.card-content {
+    width: 315px;
+    padding: 28px 0 38px 50px;
+}
+
+.card-content label {
+    display: block;
+    margin: 0 0 8px;
+    color: #4b8587;
+    font-size: 13px;
+}
+
+.card-content > input {
+    display: block;
+    width: 315px;
+    margin-bottom: 18px;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #4b8587;
+    padding: 10px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #357d80;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #73aeb0;
+}
+
+.small-fields {
+    display: flex;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.small-fields > div:first-child {
+    width: 202px;
+}
+
+.small-fields > div:last-child {
+    width: 90px;
+}
+
+.expiry-fields {
+    display: flex;
+    gap: 20px;
+}
+
+.expiry-fields input {
+    width: 90px;
+}
+
+.small-fields > div:last-child input {
+    width: 90px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 30px 12px;
+    }
+
+    .card-content {
+        width: 100%;
+        padding: 28px 25px 35px;
+    }
+
+    .card-content > input {
+        width: 100%;
+    }
+
+    .small-fields {
+        gap: 12px;
+    }
+
+    .small-fields > div:first-child {
+        flex: 1;
+    }
+
+    .small-fields > div:last-child {
+        width: 80px;
+    }
+
+    .expiry-fields {
+        gap: 8px;
+    }
+
+    .expiry-fields input,
+    .small-fields > div:last-child input {
+        width: 100%;
+    }
+}
