@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="contact-form">
+        <h1>Contact form</h1>
+        <p class="form-description">Please fill in your information and we'll be sending your order.</p>
+
+        <div class="form-row">
+            <label for="first-name">Your name</label>
+            <div class="name-fields">
+                <input id="first-name" type="text" placeholder="first name">
+                <input id="last-name" type="text" placeholder="last name">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="email">Your email</label>
+            <input id="email" type="email" placeholder="your_mail@mail.com">
+        </div>
+
+        <div class="form-row">
+            <label for="phone-one">Phone *</label>
+            <div class="phone-fields">
+                <input id="phone-one" type="tel" placeholder="000">
+                <input id="phone-two" type="tel" placeholder="000">
+                <input id="phone-three" type="tel" placeholder="0000">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label for="subject">Message subject *</label>
+            <select id="subject">
+                <option>Other</option>
+                <option>Question</option>
+                <option>Cooperation</option>
+                <option>Support</option>
+            </select>
+        </div>
+
+        <div class="form-row message-row">
+            <label for="message">Message *</label>
+            <textarea id="message" placeholder="Your message"></textarea>
+        </div>
+
+        <div class="submit-row">
+            <input type="submit" value="SUBMIT FORM">
+        </div>
+    </form>
+</body>
+</html>

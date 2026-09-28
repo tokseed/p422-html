@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 70px 20px;
+    background-color: #356f73;
+    background-image:
+        linear-gradient(120deg, rgba(20, 74, 80, 0.92), rgba(67, 139, 119, 0.72)),
+        radial-gradient(circle at 85% 25%, #e2bb85 0, transparent 30%),
+        linear-gradient(135deg, #174c57, #d3a46f);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.contact-form {
+    width: 850px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 45px 55px;
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background-color: rgba(17, 65, 68, 0.28);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+.contact-form h1 {
+    margin-bottom: 18px;
+    font-size: 28px;
+}
+
+.form-description {
+    margin-bottom: 35px;
+    font-size: 13px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.form-row label {
+    font-size: 14px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border: 0;
+    padding: 11px 14px;
+    outline: none;
+    color: #555;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #a5a5a5;
+}
+
+.name-fields,
+.phone-fields {
+    display: flex;
+    gap: 16px;
+}
+
+.phone-fields input:first-child,
+.phone-fields input:nth-child(2) {
+    flex: 0.7;
+}
+
+.message-row {
+    align-items: start;
+}
+
+textarea {
+    min-height: 105px;
+    resize: vertical;
+}
+
+.submit-row {
+    margin-top: 30px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.55);
+}
+
+.submit-row input {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.submit-row input:hover {
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+@media (max-width: 650px) {
+    body {
+        padding: 25px 12px;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 7px;
+    }
+
+    .name-fields,
+    .phone-fields {
+        gap: 8px;
+    }
+}
