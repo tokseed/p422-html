@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e9e9;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 900px;
+    margin: 40px auto;
+}
+
+.homework-block {
+    min-height: 220px;
+    margin-bottom: 25px;
+    padding: 25px 35px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.18);
+}
+
+.homework-block h2 {
+    margin-bottom: 25px;
+    color: #355f94;
+    font-size: 24px;
+}
+
+.icons-block {
+    min-height: 450px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #fffed0;
+}
+
+.floating-icons {
+    position: relative;
+    height: 330px;
+    margin-top: 10px;
+}
+
+.floating-icon {
+    position: absolute;
+    object-fit: contain;
+    transform: translateY(380px);
+    animation: fly-up 2s ease-out forwards;
+}
+
+.icon-calculator {
+    top: 105px;
+    left: 80px;
+    width: 115px;
+    animation-delay: 0s;
+}
+
+.icon-document {
+    top: 20px;
+    left: 275px;
+    width: 145px;
+    animation-delay: 0.5s;
+}
+
+.icon-list {
+    top: 20px;
+    right: 255px;
+    width: 145px;
+    animation-delay: 1s;
+}
+
+.icon-palette {
+    top: 105px;
+    right: 70px;
+    width: 120px;
+    animation-delay: 1.5s;
+}
+
+.icon-pencil {
+    top: 235px;
+    left: 390px;
+    width: 125px;
+    animation-delay: 2s;
+}
+
+@keyframes fly-up {
+    from {
+        transform: translateY(380px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 95%;
+    }
+
+}
